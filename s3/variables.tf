@@ -4,6 +4,3 @@ variable "create_bucket" {
 variable "create_tier" {
   default = true
 }
-variable "instance_type" {
-  default = "t3.micro"
-}

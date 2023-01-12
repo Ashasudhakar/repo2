@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" {
-  count = var.create_bucket ? 1 : 0
+  count  = var.create_bucket ? 1 : 0
   bucket = "my-tf-test-bucket-asha"
 
   tags = {
@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "b" {
 }
 
 resource "aws_s3_bucket_intelligent_tiering_configuration" "example-entire-bucket" {
-  count = var.create_tier ? 1 : 0
+  count  = var.create_tier ? 1 : 0
   bucket = aws_s3_bucket.b[count.index].bucket
   name   = "EntireBucket"
 
