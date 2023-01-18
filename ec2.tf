@@ -110,7 +110,7 @@ resource "aws_instance" "this" {
     aws_iam_instance_profile.this
   ]
   ami                    = data.aws_ami.amazon-linux-2.id
-  instance_type          = "t3.micro"
+  instance_type          = "t2.medium"
   key_name               = "eks_worker_test"
   vpc_security_group_ids = [aws_security_group.this.id]
   subnet_id              = aws_subnet.this.id

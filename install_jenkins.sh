@@ -52,7 +52,6 @@ sudo java -jar jenkins-cli.jar -auth admin:$passwd -s http://$ipaddr:8080 instal
                                                                                         jdk-tool:1.5 \
                                                                                         workflow-aggregator:2.6 \
                                                                                         ws-cleanup:0.39 \
-                                                                                        file-parameters:264.v1733d9b_2a_380 \
                                                                                         ansicolor:1.0.2
 
 # Disable initial setup in jenkins
